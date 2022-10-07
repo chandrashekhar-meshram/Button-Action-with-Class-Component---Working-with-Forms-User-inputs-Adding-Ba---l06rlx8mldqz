@@ -9,17 +9,17 @@ class App extends Component {
     };
   }
 
-  componentDidMount() {
-    console.log("did update run");
-    this.showFn();
-  }
+  //   componentDidMount() {
+  //     console.log("did update run");
+  //     this.showFn();
+  //   }
 
-  showFn = () => {
-    console.log("showfn run");
-    this.setState({
-      show: this.state.show,
-    });
-  };
+  //   showFn = () => {
+  //     console.log("showfn run");
+  //     this.setState({
+  //       show: this.state.show,
+  //     });
+  //   };
 
   render() {
     console.log("button clicked");
@@ -29,12 +29,12 @@ class App extends Component {
         <button id="click" onClick={this.showFn}>
           render a paragraph tag
         </button>
-        {this.show && (
+        {/* {this.show && (
           <p id="para">
             Hello, I've learnt to use the full-stack evaluation tool. This
             makesme so happy
           </p>
-        )}
+        )} */}
       </div>
     );
   }
