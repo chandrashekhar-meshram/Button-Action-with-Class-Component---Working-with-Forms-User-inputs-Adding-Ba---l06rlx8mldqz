@@ -9,15 +9,25 @@ class App extends Component {
     };
   }
 
-  componentDidMount() {
-    console.log("did update run");
-    this.showFn();
+  componentWillMount() {
+    // could do something like pull state from API
   }
+
+  componentDidMount() {}
+
+  componentWillUnmount() {}
+
+  componentDidUpdate() {}
+
+  // componentDidMount() {
+  //   console.log("did update run");
+  //   this.showFn();
+  // }
 
   showFn = () => {
     console.log("showfn run");
     this.setState({
-      show: this.state.show,
+      show: true,
     });
   };
 
@@ -29,7 +39,7 @@ class App extends Component {
         <button id="click" onClick={this.showFn}>
           render a paragraph tag
         </button>
-        {this.show && (
+        {this.state.show && (
           <p id="para">
             Hello, I've learnt to use the full-stack evaluation tool. This
             makesme so happy
