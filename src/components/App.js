@@ -27,6 +27,7 @@ class App extends Component {
   // showFn = () => {
   //   console.log("showfn run");
   //   this.setState({
+  //     ...this.state,
   //     show: true,
   //   });
   // };
