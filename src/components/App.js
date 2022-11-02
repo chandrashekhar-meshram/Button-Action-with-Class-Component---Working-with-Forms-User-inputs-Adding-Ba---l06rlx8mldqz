@@ -24,12 +24,12 @@ class App extends Component {
   //   this.showFn();
   // }
 
-  showFn = () => {
-    console.log("showfn run");
-    this.setState({
-      show: true,
-    });
-  };
+  // showFn = () => {
+  //   console.log("showfn run");
+  //   this.setState({
+  //     show: true,
+  //   });
+  // };
 
   render() {
     console.log("button clicked");
