@@ -11,7 +11,6 @@ class App extends Component {
   }
 
   showFn = () => {
-    console.log("showfn run");
     this.setState({
       show: `Hello, I've learnt to use the full-stack evaluation tool. This
             makesme so happy`,
@@ -19,7 +18,6 @@ class App extends Component {
   };
 
   render() {
-    console.log("button clicked");
     return (
       <div id="main">
         {/* Do not remove this main div!! */}
