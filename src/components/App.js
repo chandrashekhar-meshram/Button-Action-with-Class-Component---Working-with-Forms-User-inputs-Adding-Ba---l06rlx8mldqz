@@ -21,10 +21,7 @@ class App extends Component {
     return (
       <div id="main">
         {/* Do not remove this main div!! */}
-        <button
-          id="click"
-          onClick={this.showFn}
-        >
+        <button id="click" onClick={this.showFn}>
           render a paragraph tag
         </button>
         <p id="para">{this.state.show}</p>
